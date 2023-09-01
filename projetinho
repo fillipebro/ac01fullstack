@@ -1,0 +1,27 @@
+banco_de_dados = []
+
+def adicionar_registro(id, nome, cpf_cnpj, endereco, email, senha,telefone):
+    novo_registro = {
+        'id': id,
+        'nome': nome,
+        'cpf_cnpj': cpf_cnpj,
+        'endereco': endereco,
+        'email': email,
+        'senha': senha,
+        'telefone': telefone 
+    }
+    banco_de_dados.append(novo_registro)
+
+adicionar_registro(1, 'Alex Wilson', '123.456.789-01', 'Rua dos Jhonnys, 123', 'alexbro@email.com', 'alex123','940028922')
+adicionar_registro(2, 'Pr12', '5598138615', 'Av. Principal, 456', 'contato@empresa.com', 'alex456','908007712')
+
+for entrada in banco_de_dados:
+    print(f'ID: {entrada["id"]}')
+    print(f'Nome: {entrada["nome"]}')
+    print(f'cpf_cnpj: {entrada["cpf_cnpj"]}')
+    print(f'Endereço: {entrada["endereco"]}')
+    print(f'Email: {entrada["email"]}')
+    print(f'Senha: {entrada["senha"]}')
+    print(f'telefone: {entrada["telefone"]}')
+    print()
+
